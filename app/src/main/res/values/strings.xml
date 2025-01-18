@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">EPapp</string>
+    <string name="confirmar_contraseña">Confirmacion</string>
+    <string name="Contraseña_nueva">Contraseña\n</string>
+    <string name="boton_entry">btn_entry\n</string>
+    <string name="side_menu">menu</string>
+    <string name="icon_btn">icono</string>
 </resources>
