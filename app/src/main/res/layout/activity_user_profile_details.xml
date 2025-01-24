@@ -9,27 +9,28 @@
     tools:context=".user_profile_details">
 
     <!-- Íconos superiores -->
+
+    <!-- Logotipo -->
     <ImageView
         android:id="@+id/menuIcon"
         android:layout_width="40dp"
         android:layout_height="40dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="28dp"
         android:src="@drawable/menu_icon"
-        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/profileIcon"
         android:layout_width="40dp"
         android:layout_height="40dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="32dp"
         android:src="@drawable/profile_icon"
-        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginEnd="10dp"
-        android:layout_marginTop="10dp" />
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <!-- Logotipo -->
     <ImageView
         android:id="@+id/logoImage"
         android:layout_width="100dp"
@@ -52,93 +53,95 @@
         android:layout_marginTop="10dp"
         android:layout_marginStart="16dp" />
 
+    <!-- Campos de texto -->
     <TextView
         android:id="@+id/title"
         android:layout_width="0dp"
         android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="16dp"
         android:background="#272B4C"
         android:gravity="center"
         android:text="DATOS GENERALES"
         android:textColor="#FFFFFF"
         android:textStyle="bold"
-        app:layout_constraintTop_toTopOf="@id/backButton"
-        app:layout_constraintStart_toEndOf="@id/backButton"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="16dp" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@id/backButton"
+        app:layout_constraintTop_toTopOf="@id/backButton" />
 
-    <!-- Campos de texto -->
     <EditText
         android:id="@+id/fullNameField"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:hint="Nombre Completo"
-        android:background="@android:color/white"
-        android:textColor="#333333"
-        android:padding="12dp"
-        app:layout_constraintTop_toBottomOf="@id/backButton"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="337dp"
+        android:layout_height="50dp"
         android:layout_marginStart="16dp"
+        android:layout_marginTop="52dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginTop="10dp" />
+        android:background="@android:color/white"
+        android:hint="Nombre Completo"
+        android:padding="12dp"
+        android:textColor="#333333"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/backButton" />
 
     <EditText
         android:id="@+id/emailField"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:hint="Correo"
-        android:background="@android:color/white"
-        android:textColor="#333333"
-        android:padding="12dp"
-        app:layout_constraintTop_toBottomOf="@id/fullNameField"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="341dp"
+        android:layout_height="50dp"
         android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginTop="10dp" />
+        android:background="@android:color/white"
+        android:hint="Correo"
+        android:padding="12dp"
+        android:textColor="#333333"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fullNameField" />
 
     <EditText
         android:id="@+id/confirmEmailField"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:hint="Confirmar Correo"
-        android:background="@android:color/white"
-        android:textColor="#333333"
-        android:padding="12dp"
-        app:layout_constraintTop_toBottomOf="@id/emailField"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="343dp"
+        android:layout_height="49dp"
         android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginTop="10dp" />
+        android:background="@android:color/white"
+        android:hint="Confirmar Correo"
+        android:padding="12dp"
+        android:textColor="#333333"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/emailField" />
 
     <Spinner
         android:id="@+id/countrySpinner"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="344dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
         android:background="@android:color/white"
         android:padding="12dp"
-        app:layout_constraintTop_toBottomOf="@id/confirmEmailField"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginTop="10dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/confirmEmailField" />
 
     <!-- Botón Guardar -->
     <Button
         android:id="@+id/saveButton"
-        android:layout_width="0dp"
-        android:layout_height="50dp"
+        android:layout_width="192dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
         android:backgroundTint="#FF7A00"
         android:text="GUARDAR"
         android:textColor="#FFFFFF"
         android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@id/countrySpinner"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginTop="20dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/countrySpinner" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,184 +1,101 @@
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:fillViewport="true"
-    android:background="#E6E0E0">
+    android:layout_height="match_parent">
 
-    <LinearLayout
-        android:layout_width="match_parent"
+    <!-- Logo -->
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="141dp"
+        android:layout_height="136dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_az" />
+
+    <!-- Menú -->
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="28dp"
+        android:contentDescription="@string/menu_btn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/menu" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:gravity="center_horizontal">
+    <!-- Perfil -->
+    <ImageButton
+        android:id="@+id/imageButton8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="14dp"
+        android:contentDescription="@string/icon_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/profile_icon" />
 
-            <ImageView
-                android:id="@+id/menuIcon"
-                android:layout_width="112dp"
-                android:layout_height="112dp"
-                android:layout_marginTop="30dp"
-                android:src="@drawable/logo_blue" />
-        </LinearLayout>
+    <!-- Campo para la CLABE -->
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center_horizontal"
-            android:paddingBottom="10dp"
-            android:paddingTop="10dp">
+    <!-- Campo para el monto -->
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_marginEnd="16dp">
+    <!-- Campo para la referencia -->
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Pago Recurrente"
-                    android:textSize="20sp"
-                    android:gravity="center" />
+    <EditText
+        android:id="@+id/editTextClabe"
+        android:layout_width="264dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="48dp"
+        android:hint="CLABE Interbancaria"
+        android:inputType="number"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageView5" />
 
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="3dp"
-                    android:layout_marginTop="4dp"
-                    android:background="#FB9300" />
-            </LinearLayout>
+    <!-- Botón para generar las instrucciones -->
+    <EditText
+        android:id="@+id/editTextAmount"
+        android:layout_width="264dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="32dp"
+        android:hint="Monto a pagar"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextClabe" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Estado de Pago"
-                android:textSize="20sp" />
-        </LinearLayout>
+    <EditText
+        android:id="@+id/editTextReference"
+        android:layout_width="264dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="32dp"
+        android:hint="Referencia numérica"
+        android:inputType="number"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextAmount" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center_horizontal">
+    <Button
+        android:id="@+id/buttonGenerateSpei"
+        android:layout_width="154dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="48dp"
+        android:background="#FF5C00"
+        android:text="Confirmar Pago"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextReference" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Ingresa los datos correspondientes:"
-                android:textSize="20sp"
-                android:paddingBottom="35dp" />
-        </LinearLayout>
-
-        <!-- Card 1 (SPEI) -->
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:layout_marginBottom="8dp"
-            android:layout_marginHorizontal="16dp"
-            app:cardCornerRadius="16dp"
-            app:cardElevation="4dp"
-            android:background="@color/white">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center_horizontal"
-                android:orientation="vertical"
-                android:padding="20dp">
-
-                <ImageView
-                    android:layout_width="200dp"
-                    android:layout_height="102dp"
-                    android:src="@drawable/spei" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:fontFamily="sans-serif-medium"
-                    android:gravity="center"
-                    android:text="SPEI"
-                    android:textSize="22sp" />
-            </LinearLayout>
-        </androidx.cardview.widget.CardView>
-
-        <!-- Formulario SPEI   -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="16dp">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Número de cuenta SPEI"
-                android:textSize="16sp"
-                android:layout_marginBottom="8dp" />
-
-            <EditText
-                android:id="@+id/speiAccountNumber"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="123456789012345678"
-                android:inputType="number"
-                android:maxLength="18"
-                android:layout_marginBottom="20dp"
-                android:background="#FFFFFF"
-                android:padding="10dp"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Referencia SPEI"
-                android:textSize="16sp"
-                android:layout_marginBottom="8dp" />
-
-            <EditText
-                android:id="@+id/speiReference"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Referencia al pagar"
-                android:inputType="text"
-                android:layout_marginBottom="20dp"
-                android:background="#FFFFFF"
-                android:padding="10dp"/>
-
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Cantidad"
-                android:textSize="16sp"
-                android:layout_marginBottom="8dp" />
-
-            <EditText
-                android:id="@+id/speiAmount"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Cantidad a pagar"
-                android:inputType="numberDecimal"
-                android:layout_marginBottom="20dp"
-                android:background="#FFFFFF"
-
-                android:padding="10dp"/>
-
-
-            <Button
-                android:id="@+id/submitSPEIButton"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Confirmar Pago SPEI"
-                android:textColor="#FFFFFF"
-                android:background="#FB9300"
-                android:padding="12dp" />
-
-        </LinearLayout>
-
-    </LinearLayout>
-</ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
