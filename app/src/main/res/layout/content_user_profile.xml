@@ -123,9 +123,10 @@
     <Button
         android:id="@+id/accountDetailsButton"
         android:layout_width="283dp"
-        android:layout_height="48dp"
+        android:layout_height="50dp"
         android:layout_marginTop="48dp"
         android:backgroundTint="#FF5C00"
+        android:background="@drawable/button_rounded"
         android:text="Detalles de la cuenta"
         android:textColor="#FFFFFF"
         android:textStyle="bold"
@@ -136,9 +137,10 @@
     <Button
         android:id="@+id/dependentsButton"
         android:layout_width="286dp"
-        android:layout_height="56dp"
+        android:layout_height="50dp"
         android:layout_marginTop="32dp"
         android:backgroundTint="#FF5C00"
+        android:background="@drawable/button_rounded"
         android:text="Detalles de dependientes"
         android:textColor="#FFFFFF"
         android:textStyle="bold"
