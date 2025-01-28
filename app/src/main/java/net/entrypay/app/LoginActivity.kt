@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+//Falta el diseño del toast
 import android.widget.Toast
 import androidx.activity.ComponentActivity
 
@@ -23,6 +24,7 @@ class LoginActivity : ComponentActivity() {
             val password = passwordField.text.toString().trim()
 
             // Validar que los campos no estén vacíos
+
             if (email.isEmpty() || password.isEmpty()) {
                 Toast.makeText(this, "Por favor, complete todos los campos", Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
