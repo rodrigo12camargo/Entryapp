@@ -111,6 +111,7 @@
             android:layout_height="50dp"
             android:layout_marginTop="60dp"
             android:backgroundTint="#E85D0C"
+            android:background="@drawable/button_rounded"
             android:text="Registrarse"
             android:textColor="#FFFDFD"
             android:textColorLink="#E85D0C"

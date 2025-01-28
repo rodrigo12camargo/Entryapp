@@ -69,6 +69,7 @@
             android:layout_height="65dp"
             android:layout_marginTop="16dp"
             android:text="Bienvenido"
+
             android:textColor="#515151"
             android:textColorLink="#000000"
             android:textSize="35sp"
@@ -84,6 +85,7 @@
             android:layout_marginTop="28dp"
             android:backgroundTint="#E85D0C"
             android:text="Iniciar sesion"
+            android:background="@drawable/button_rounded"
             android:textColor="#FFFFFF"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

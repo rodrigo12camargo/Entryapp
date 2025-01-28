@@ -85,6 +85,7 @@
             android:layout_height="52dp"
             android:layout_marginTop="36dp"
             android:backgroundTint="#E85D0C"
+            android:background="@drawable/button_rounded"
             android:text="Autenticar "
             android:textColor="@color/white"
             android:textColorHighlight="@color/white"
