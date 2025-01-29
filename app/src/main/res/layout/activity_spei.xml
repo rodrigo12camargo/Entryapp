@@ -90,11 +90,12 @@
         android:id="@+id/buttonGenerateSpei"
         android:layout_width="154dp"
         android:layout_height="50dp"
-        android:layout_marginTop="48dp"
-        android:background="#FF5C00"
+        android:layout_marginTop="60dp"
         android:text="Confirmar Pago"
+        android:background="@drawable/button_rounded"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/editTextReference" />
 

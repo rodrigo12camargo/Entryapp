@@ -6,6 +6,7 @@
     <string name="side_menu">menu</string>
     <string name="icon_btn">icono</string>
     <string name="user_icon">usuario</string>
+    <string name="usuario">usuario</string>
     <string name="menu_btn">menu</string>
     <string name="CVV_BTN">CVV</string>
 </resources>

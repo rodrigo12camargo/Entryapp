@@ -41,19 +41,21 @@
         app:srcCompat="@drawable/profile_icon" />
 
     <!-- Campo para el número de tarjeta -->
+
+    <!-- Campo para la fecha de vencimiento -->
     <EditText
         android:id="@+id/editTextCardNumber"
         android:layout_width="264dp"
         android:layout_height="52dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="60dp"
         android:hint="Número de tarjeta"
         android:inputType="number"
         android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/imageView5" />
 
-    <!-- Campo para la fecha de vencimiento -->
     <EditText
         android:id="@+id/editTextExpiryDate"
         android:layout_width="264dp"
@@ -84,8 +86,8 @@
         android:id="@+id/buttonConfirmStripePayment"
         android:layout_width="154dp"
         android:layout_height="50dp"
-        android:layout_marginTop="52dp"
-        android:background="#FF5C00"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/button_rounded"
         android:text="Confirmar Pago"
         android:textColor="#212121"
         app:layout_constraintEnd_toEndOf="parent"

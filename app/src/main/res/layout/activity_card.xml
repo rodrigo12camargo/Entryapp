@@ -3,7 +3,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-             android:layout_height="match_parent">
+    android:layout_height="match_parent">
+
+
+
 
     <ImageView
         android:id="@+id/imageView4"
@@ -41,7 +44,7 @@
         android:id="@+id/editTextText"
         android:layout_width="264dp"
         android:layout_height="52dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="48dp"
         android:ems="10"
         android:inputType="text"
         android:text="Numero de tarjeta "
@@ -55,7 +58,7 @@
         android:id="@+id/editTextDate"
         android:layout_width="84dp"
         android:layout_height="54dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="44dp"
         android:ems="10"
         android:inputType="date"
         android:text="MM/AA"
@@ -69,7 +72,7 @@
         android:id="@+id/editTextNumber"
         android:layout_width="84dp"
         android:layout_height="54dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="44dp"
         android:layout_marginEnd="96dp"
         android:ems="10"
         android:hint="@string/CVV_BTN"
@@ -83,7 +86,7 @@
         android:id="@+id/editTextText3"
         android:layout_width="264dp"
         android:layout_height="52dp"
-        android:layout_marginTop="132dp"
+        android:layout_marginTop="144dp"
         android:ems="10"
         android:inputType="text"
         android:text="Nombre del titular"
@@ -97,12 +100,14 @@
         android:id="@+id/button2"
         android:layout_width="154dp"
         android:layout_height="50dp"
-        android:layout_marginTop="57dp"
-        android:backgroundTint="#FF5C00"
+        android:layout_marginTop="68dp"
+        android:background="@drawable/button_rounded"
         android:text="Confirmar Pago"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextText3" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
