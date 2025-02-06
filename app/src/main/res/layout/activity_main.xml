@@ -28,11 +28,11 @@
         app:srcCompat="@drawable/menu_entry" />
 
     <ImageButton
-        android:id="@+id/intercom_button"
+        android:id="@+id/Btn_intercom"
         android:layout_width="124dp"
         android:layout_height="119dp"
         android:layout_marginTop="32dp"
-        android:contentDescription="@string/intercom_button"
+        android:contentDescription="@string/Btn_intercom"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
@@ -44,11 +44,11 @@
         android:layout_width="124dp"
         android:layout_height="119dp"
         android:layout_marginTop="32dp"
-        android:contentDescription="@string/pay_button"
+        android:contentDescription="@string/pay_btn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/intercom_button"
+        app:layout_constraintTop_toBottomOf="@+id/Btn_intercom"
         app:srcCompat="@drawable/menu_pay" />
 
     <ImageButton
@@ -81,6 +81,7 @@
         android:layout_height="wrap_content"
         android:text="FREE YOUR PAY, FREE YOUR WAY"
         tools:layout_editor_absoluteX="101dp"
-        tools:layout_editor_absoluteY="642dp" />
+        tools:layout_editor_absoluteY="642dp"
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

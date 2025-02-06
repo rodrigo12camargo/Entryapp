@@ -9,4 +9,7 @@
     <string name="usuario">usuario</string>
     <string name="menu_btn">menu</string>
     <string name="CVV_BTN">CVV</string>
+    <string name="scan_button">scan\n</string>
+    <string name="Btn_intercom">intercom\n</string>
+    <string name="pay_btn">pay</string>
 </resources>
